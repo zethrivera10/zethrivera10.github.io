@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me!</title>
+        <link rel="stylesheet" type="text/css" href = "style.css">
+    </head>
+
+    <section>
+        <img src= "purple.gif" id = "purple"> 
+        <img src = "moon.png" id = "moon1">
+        <h2 id ="text1">Scroll Down</h2>
+    </section>
+
+    <body class = "subbody">
+        <header>
+            <a href = "index.html" class = "logo1">Home</a>
+        </header>
+        <h3>About Me</h3>
+        <p>
+            <br>Hi! Im "Rhodemil Zeth M. Rivera and I'm 20 years old. Im currently studying as 3rd year college BSIT student under Polytechnic University Of The Philippines Santa Rosa Campus. ive been living in Santa Rosa Laguna since 2004 and im proud to say that I am myself, therefore whether I find myself as a smart, attractive and responsible person; it is called “Myself” because the more you know who you are, the more you understand what is being yourself. <br><br>I am a Filipino,
+            A race that is born in hospitality, a country that is full of family-oriented citizens, a nation where everyone fears God, and a place where people smile through everything, we are “Filipino’s”. 
+            Being born in this race is a blessing, because being a "Filipino" has more to do with it than it says, being able to celebrate Christmas from September to December, respectful especially to the elders and, most of all, their cheerful personality, were in every problems in life we always find a piece of happiness within it. But being a “Filipino” has a flaw, their respect their elders thoroughly to the point that having an age has more superiority and is always right. 
+            I am a “Filipino”, in blood and spirit, came from the lineage of heroes and until I die, I will be a proud “Filipino”.
+            <br><br>i Aspires to be a programmer that can help build a more systematic and organize society through developing websites or applications as we are in the future with technological advancement. <br> <br><br><br>
+        </p>
+
+        <script>
+             let moon = document.getElementById('moon1'); 
+             let text1 = document.getElementById('text1');
+
+             window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                moon.style.top = value * 1.05 + 'px';
+                text1.style.marginTop = value * 1.5 + 'px';
+             })
+        </script>
+
+    </body>
+        
+</html>

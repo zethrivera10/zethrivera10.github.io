@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Personal Website </title>
+        <link rel="stylesheet" type="text/css" href = "style.css">
+    </head>
+
+    <body>
+        <header>
+            <a href = "https://www.youtube.com/watch?v=o-YBDTqX_ZU" class = "logo">Dont Click Here!</a>
+            <ul>
+                <li><a href = "#" class = "active"> Home</a></li>
+                <li><a href = "aboutme.html" > AboutMe</a></li>
+                <li><a href = "slam.html" > Slambook</a></li>
+                <li><a href = "sponsors.html" > Sponsors</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src = "stars.png" id = "stars">
+            <img src = "moon.png" id = "moon">
+            <img src = "mountains_behind.png" id = "mountains_behind">
+            <h2 id ="text">optimum pride</h2>
+            <a href = "#sec" id = "btn">Explore</a>
+            <img src = "mountains_front.png" id = "mountains_front">
+
+        </section>
+        <div class = "sec" id = "sec">
+            <h2>Who Am I?</h2>
+            <p>
+                <br><br>“Cogito, ergo sum” (I think therefore I am), René Descartes stated that we couldn’t questioned our existence because the one who doubt is our self, but what am I as an “existence”? Who am I on the mind of others? What I am in my dreams? What am I really wanted to be? Who Am I? <br> <br><br><br>
+                Every human have different identity, other humans have more than one identity, but there are no humans in this world that has no identity. Identity was created when a person’s mind think of someone’s attribute or personality; it can also be created from judging his/her own self characteristics.
+                If I think of myself as a humble, funny and smart person therefore that is the identity of myself, what others perceive about me are another different opinion of myself. Identity depends on the environment, so who really are we? What you think of yourself what defines you; characteristics that you accept will define you and build you until it reflects the person you are now. I am the creator of my very own self and I intend to treat me like my greatest masterpiece.<br><br><br><br>
+                We are who we are today because of the choices we made yesterday, others can’t distort our own psyche. Accepting of oneself/ourselves what really defines us. Everything starts with these two small words that have the power to change your life, what are those words?I Am…<br><br><br><br><br><br><br><br>
+                
+
+
+            </p>
+        </div>
+        <script>
+            let stars = document.getElementById('stars'); 
+            let moon = document.getElementById('moon'); 
+            let mountains_behind = document.getElementById('mountains_behind'); 
+            let text = document.getElementById('text'); 
+            let btn = document.getElementById('btn'); 
+            let mountains_front = document.getElementById('mountains_front'); 
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
